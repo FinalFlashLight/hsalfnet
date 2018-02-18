@@ -1,0 +1,11 @@
+<h3>User info</h3>
+<div>
+  ID: {{user.userId}}
+  name: {{user.display_name}}
+  <img src='{{user.logo}}'>
+</div>
+<div *ngFor="let stream of user.streams">
+  <a routerLink="/u/{{stream.streamId}}">
+  {{stream.streamId}}
+  </a>
+</div>
